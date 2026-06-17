@@ -104,6 +104,28 @@ All four classifiers were trained and evaluated using stratified 5-fold cross-va
 
 **Top predictive biomarkers** (consistent across models): **Bilirubin**, **Age**, and **Prothrombin time** were the strongest predictors of patient outcome across nearly all four models, with `N_Days` (time since registration) also ranking highly.
 
+### Visualizations
+
+**Target class distribution**
+
+![Target Distribution](plots/01_target_distribution.png)
+
+**Feature correlation heatmap**
+
+![Correlation Heatmap](plots/02_correlation_heatmap.png)
+
+**Cross-validation accuracy comparison (4 models)**
+
+![CV Comparison](plots/07_cv_comparison.png)
+
+**Confusion matrices (4 models)**
+
+![Confusion Matrices](plots/06_confusion_matrices.png)
+
+**Feature importance (4 models)**
+
+![Feature Importance](plots/08_feature_importance.png)
+
 ---
 
 ## Technologies Used
@@ -121,8 +143,8 @@ All four classifiers were trained and evaluated using stratified 5-fold cross-va
 
 1. **Clone the repository**
 ```
-git clone https://github.com/Sravyagoli/Liver-Cirrhosis-Prediction-.git
-cd Liver-Cirrhosis-Prediction-
+git clone https://github.com/Sravyagoli/Liver-Cirrhosis-Prediction.git
+cd Liver-Cirrhosis-Prediction
 ```
 
 2. **Install dependencies**
@@ -132,16 +154,16 @@ pip install numpy pandas matplotlib seaborn scikit-learn xgboost
 
 3. **Add the dataset** — Place `cirrhosis.csv` in the same directory as the notebook (or update the file path inside the notebook).
 
-4. **Run the notebook** — Open `Liver_Cirrhosis_Prediction.ipynb` in Jupyter Notebook or Google Colab and run all cells.
+4. **Run the notebook** — Open `Liver_Cirrhosis_Prediction1.ipynb` in Jupyter Notebook or Google Colab and run all cells.
 
 ---
 
 ## Project Structure
 
 ```
-Liver-Cirrhosis-Prediction-/
+Liver-Cirrhosis-Prediction/
 │
-├── Liver_Cirrhosis_Prediction.ipynb   # Main notebook
+├── Liver_Cirrhosis_Prediction1.ipynb   # Main notebook
 ├── cirrhosis.csv                      # Dataset
 └── README.md                          # Project documentation
 ```
